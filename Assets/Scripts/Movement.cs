@@ -5,11 +5,11 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private float _speed;
 
-    private Vector3 _position;
+    private Vector3 _initPosition;
 
-    private void Start()
+    private void Awake()
     {
-        _position = transform.position;
+        _initPosition = transform.position;
     }
 
     private void Update()
@@ -19,7 +19,7 @@ public class Movement : MonoBehaviour
 
     private void Move()
     {
-        _position.x += _speed * Time.deltaTime;
-        transform.position = _position;
+        _initPosition.x += _speed * Time.deltaTime;
+        transform.position = _initPosition;
     }
 }
