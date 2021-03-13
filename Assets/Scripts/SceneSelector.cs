@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneSelector : MonoBehaviour
 {
-    public void Select(int index)
+    public void SelectScene(int index)
     {
         SceneManager.LoadScene(index);
     }
