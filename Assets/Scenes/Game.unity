@@ -340,6 +340,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2437936540703534995, guid: b8622df5fdfd01144ab2072ce151210d,
+        type: 3}
+      propertyPath: _notify.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Destroyer
+      objectReference: {fileID: 0}
     - target: {fileID: 2437936540703534996, guid: b8622df5fdfd01144ab2072ce151210d,
         type: 3}
       propertyPath: m_Name
