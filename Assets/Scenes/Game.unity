@@ -153,7 +153,7 @@ MonoBehaviour:
   _gameObject: {fileID: 4947330138108966791, guid: afb37af57944ebb41a9417bcd57f0f4f,
     type: 3}
   _intensity: 2.52
-  _pointA: {x: 8.18, y: -5.99, z: 0}
+  _pointA: {x: 8.72, y: -5.99, z: 0}
   _pointB: {x: -8.49, y: -6.86, z: 0}
 --- !u!4 &455648007
 Transform:
