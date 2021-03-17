@@ -15,7 +15,7 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private Vector3 _pointB;
 
-    private Vector3 _randomPoint;
+    private Vector3 _randomPosition;
 
     private void Awake()
     {
@@ -25,11 +25,11 @@ public class Spawner : MonoBehaviour
     {
         while (true)
         {
-            _randomPoint.x = Random.Range(_pointA.x, _pointB.x);
-            _randomPoint.y = Random.Range(_pointA.y, _pointB.y);
-            _randomPoint.z = _pointB.z;
+            _randomPosition.x = Random.Range(_pointA.x, _pointB.x);
+            _randomPosition.y = Random.Range(_pointA.y, _pointB.y);
+            _randomPosition.z = _pointB.z;
 
-            Instantiate(_gameObject, _randomPoint, Quaternion.Euler(0, 0, 0));
+            Instantiate(_gameObject, _randomPosition, Quaternion.Euler(0, 0, 0));
             yield return new WaitForSeconds(_intensity);
         }
     }
