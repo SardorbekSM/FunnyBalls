@@ -7,6 +7,6 @@ public class ClickChecker : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Destroy(gameObject);
+        _notify?.Invoke(gameObject);
     }
 }
