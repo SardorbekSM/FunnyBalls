@@ -1605,8 +1605,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23cffca73b366f94c9700db8a9ecbc2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameObject: {fileID: 2783856582664423933, guid: 87dc09bc590bd7f439cbdea45c93a2ca,
-    type: 3}
+  _gameObject:
+  - {fileID: 2783856582664423933, guid: 87dc09bc590bd7f439cbdea45c93a2ca, type: 3}
+  _gameObjectArrayLength: 0
   _intensity: 6.92
   _pointA: {x: 9.9, y: 3.98, z: 30}
   _pointB: {x: 12.21, y: 0.05, z: 30}
