@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Dye : MonoBehaviour
 {
@@ -14,10 +12,5 @@ public class Dye : MonoBehaviour
     private void Start()
     {
         _sprite.color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
-    }
-
-    private void Update()
-    {
-        
     }
 }

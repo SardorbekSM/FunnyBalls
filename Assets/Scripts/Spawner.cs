@@ -6,9 +6,8 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private GameObject[] _gameObject;
 
-    [SerializeField]
     private float _gameObjectArrayLength;
-    
+
     [SerializeField]
     private float _intensity;
 
@@ -32,7 +31,7 @@ public class Spawner : MonoBehaviour
             _randomPosition.x = Random.Range(_pointA.x, _pointB.x);
             _randomPosition.y = Random.Range(_pointA.y, _pointB.y);
             _randomPosition.z = _pointB.z;
-            
+
             Instantiate(_gameObject[(int)Random.Range(0, _gameObjectArrayLength)], _randomPosition, Quaternion.Euler(0, 0, 0));
             yield return new WaitForSeconds(_intensity);
         }
